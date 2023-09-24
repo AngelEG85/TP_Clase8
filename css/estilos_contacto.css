@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-size: 1.2rem;
+    background-color: rgb(41, 36, 43);
+    color: rgb(190, 180, 180);
+}
+.contenedor{
+    width: 80%;
+    margin: 50px auto;
+}
+.contenedor h1{
+    text-align: center;
+}
+.cuadro_contacto{
+    
+    display: flex;
+    border-radius: 5%;
+}
+.contacto_izquierda{
+    background: seashell;
+    flex-basis: 60%;
+    padding: 40px,60px;
+    color: rgb(41, 36, 43);
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+.contacto_derecha{
+    flex-basis: 40%;
+    padding: 40px;
+    background: linear-gradient(180deg,  rgb(125, 48, 137) 0%, rgb(148, 14, 196) 50%, rgba(209,85,204,1) 100%);
+    font-size: 1.5rem;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+ 
+}
+
+h1{
+    margin-bottom: 10px;
+}
+.contenedor p{
+    margin-bottom: 40px;
+}
+.contacto_izquierda h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.fila_contacto{
+    display: flex;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.columna_contacto{
+    padding: 5px;
+    flex: 1;
+}
+
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    padding-bottom: 5px;
+}
+
+textarea{
+    width: 90%;
+    border: 1px solid saddlebrown;
+    outline: none;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-left: 5%;
+
+}
+
+label{
+    margin-bottom: 10px;
+    display: block;
+}
+
+#mensaje_txt{
+    text-align: center;
+}
+
+#bonton_enviar_msj{
+    background: rgb(41, 36, 43);
+    width: 100px;
+    border: none;
+    outline: none;
+    color:cornsilk;
+    height: 35px;
+    border-radius: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    margin-left: 40%;
+    cursor: pointer;
+}
+.botones a{
+    text-decoration: none;
+    color: cornsilk;
+    font-size: 1.3rem;
+}
+.contacto_derecha h3{
+    text-align: center;
+    
+}
+
+tr td:first-child{
+    padding-right: 20px;
+}
+
+tr td{
+    padding-top: 20px;
+}
+
+#logo{
+    max-width: 100%;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}

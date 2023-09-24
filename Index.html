@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header id="top">
+        <!-- Este nav contiene el encabezado completo, la clase contenedor la use para otras cossas aparte del encabezado asique le agrege la clase navegacion para poder modificar solo el encabezado -->
+        <nav class="navegacion contenedor">
+            <!-- Este div con la calase logo esta dedicado solo para el icono en la esquina del encabezaado-->
+            <div class="logo">
+                <img src="img\LOGO.png" alt="logo de la pagina">
+            </div>
+            <!--Este es nada maas para el titulo de la pagina mas o menos-->
+            <div class="titulo"> 
+                <h1>Cursos a Distancia</h1>
+            </div>
+            <!-- Este es el menu contextual, o sea, o sea los links que nos van mandando a las diferentes partes de la pagina. no puse un enlace para la home, porque tecnicamente ya estamos en la home asique era medio redudante me parecio -->
+            <div class="enlaces">
+                <button class="menu_contenido_btn">Contenido</button>
+                <div class="menu_contenido">
+                    <li><a href="#html">HTML5</a></li>
+                    <br>
+                    <li><a href="#css">CSS</a></li>
+                </div>
+                <li><a href="#acerca_de">Acerca de Nosotros</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </div>
+        </nav>
+        <!--- Esta es la otra imagee que querias poner, le puse la clase contenedor para que quede en el margen que tiene todo lo demas, y el id es para despues centrarla-->
+        <div class="contenedor">
+            <img src="img/opcion-estudiar-online-distancia-1280x720(2).jpg" alt="Imagen de introducion" width="50%" height="50%" id="imagen_intro">
+        </div>
+        <!-- Este div es la info de html, le puse la clase segmento_html para poder modificarlo sin tocar nada mas de ser necesario-->
+        <div class="contenedor segmento_html" id="html">
+            <br>
+            <h2>¿Qué es HTML?</h2>
+            <p>HTML significa, por sus siglas en inglés Lenguaje de Marcas para Hipertexto. El hipertexto es la
+                posibilidad que nos da Internet de poder vincular un documento (texto) con otro, a través de lo que
+                conocemos como vínculos o links, que nos permite navegar entre distintas páginas usando el
+                mouse o el dedo cuando usamos un equipo táctil.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, et natus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consectetur nemo totam atque ea.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis similique quos autem voluptas officiis numquam labore minus possimus cupiditate!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, et natus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consectetur nemo totam atque ea.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis similique quos autem voluptas officiis numquam labore minus possimus cupiditate!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, et natus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consectetur nemo totam atque ea.</p>    
+        </div>
+        <div class="contenedor segmento_css" id="css">
+            <br>
+            <h2>CSS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, et natus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consectetur nemo totam atque ea.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis similique quos autem voluptas officiis numquam labore minus possimus cupiditate!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, et natus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consectetur nemo totam atque ea.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis similique quos autem voluptas officiis numquam labore minus possimus cupiditate!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, et natus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consectetur nemo totam atque ea.</p>    
+        </div>
+        <div class="contenedor segmento_acerca_de" id="acerca_de">
+            <br>
+            <h2>Quienes Somos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, et natus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consectetur nemo totam atque ea.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis similique quos autem voluptas officiis numquam labore minus possimus cupiditate!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, et natus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consectetur nemo totam atque ea.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis similique quos autem voluptas officiis numquam labore minus possimus cupiditate!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, et natus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consectetur nemo totam atque ea.</p>   
+        </div>
+       
+    </header>
+    <!-- Aca agrego el boton para volver arriba cuando-->
+    <footer>
+        <nav class="home">
+            <div class="enlaces">
+                <li><a href="#top">Subir</a></li>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,123 @@
+/* Cambie el "body" por un "*" porque esto directamente aplica a todo*/
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    background-color: rgb(41, 36, 43);
+    color: rgb(190, 180, 180);
+}
+/* Modifique la clase contenedor paara que tenga un margen por cuestiones esteticas mas que nada y le di el color de fondo para que le aplique a todo lo que va a tener clase de contenedor*/
+.contenedor{
+    width: 95%;
+    margin: auto;
+    padding: 60px;
+    background-color: rgb(41, 36, 43);
+}
+/* Esto maneja lo que seria eel rectagulo del encabezado, el z-index es para que este siempre encima de todo lo que venga despues, y los position para que se mantenga siempre en la parte de arriba mientras scrolleamos*/
+.navegacion{
+    z-index: 99;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    padding:0%;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+}
+/* Esto es que el rectangulo que encuadra el logo sea del tamaño del encabezado*/
+.logo{
+    height: 70;
+}
+/* y aca configuro como se comporta la imagee del logo en si*/
+.logo img{
+    display: block;
+    height: 100%;
+}
+.titulo{
+    padding-top: 20px;
+    padding-right: 30px;
+    color:  rgb(224, 216, 216);
+}
+/* de aca para abajo le doy estilo a los links del menu*/
+.enlaces{
+    position: relative;
+}
+.enlaces li{
+    padding-top: 40px;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.enlaces a{
+
+    padding-left: 10px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: rgb(224, 216, 216);
+}
+
+/* Esto es todo lo que vendria siendo el menu contextual de la seccion de contenido, para que aparesca y desaparesca cuando se pone el mouse en sima*/
+
+.menu_contenido_btn{
+    display: inline-block;
+    padding-left: 10px;
+    text-align: justify;
+    cursor: pointer;
+    border: none;
+    color:  rgb(224, 216, 216);
+}
+.menu_contenido li{
+    background-color: rgba(224, 216, 216,0);
+    padding-bottom: 5px;
+    padding-top: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10%;
+}
+.menu_contenido a{
+    display: block;
+
+    background-color: rgba(224, 216, 216,0);
+    color: rgb(41, 36, 43);
+    font-size: 1.2rem;
+    border-radius: 10%;
+}
+.menu_contenido{
+    position: absolute;
+    display: none;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    background-color:rgba(224, 216, 216,0.9) ;
+    color: rgb(41, 36, 43);
+    transform: translateX(+4px);
+
+}
+
+/* aca lo que hago es que cambie el color del link cuando el puntero del mouse esta encima*/
+.enlaces a:hover{
+    color: rgb(219, 199, 158);
+}
+.contenido:hover{
+    color: rgb(219, 199, 158) ;
+}
+.enlaces > .menu_contenido_btn:hover + .menu_contenido{
+    display: block;
+}
+.menu_contenido:hover{
+    display: block;
+}
+.menu_contenido a:hover{
+    color: rgb(183, 0, 255);
+}
+
+/* Esto es para centrar la imagen que viene despues del encabezado y el z-index para asegurar que la imagen quede debajo del encabezado cuando scrolleamos*/
+#imagen_intro{
+    position:relative; left: 20%; top: auto;
+    z-index: 0;
+}
+
+
+

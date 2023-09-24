@@ -1,0 +1,6 @@
+-> El link de "contenidos" es un boton ahora en vez de un item de una lista
+->Lo configure con CSS para que cuando el puntero del mouse este en cima del boton de contenidos se habra un menu contextual con los links para html y css, y  el menu se va cuando sacas el puntero de ahi para que no se quede ahi molestando a la vista
+->El link de contacto va a una pagina medio pelo que hice donde se puede "mandar" un mensaje a los desaroladores, auque no hace nada en realidad, a parte puse informacion de contacto falsa ahi como para que paresca mas real.
+->Le arme una hoja de estilos aparte a esta pagina de contacto porque me parecio que quedaba mas ordenado asi. ademas era mas facil que andar fijandome de hacer algo que afecte a la pagina principal.
+->Depues, hay otros cambios en el css que estan comentados en la hoja de estilos.
+
