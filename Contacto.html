@@ -6,13 +6,30 @@
         <link rel="stylesheet" href="css/estilos_contacto.css">
     </head>
     <body>
+
+        <nav class="navegacion contenedor">
+            <!-- Este div con la calase logo esta dedicado solo para el icono en la esquina del encabezaado-->
+            <div class="logo">
+                <img src="img\LOGO.png" alt="logo de la pagina">
+            </div>
+            <!--Este es nada maas para el titulo de la pagina mas o menos-->
+            <div class="titulo"> 
+                <h1>Cursos a Distancia</h1>
+            </div>
+            <!-- Este es el menu contextual, o sea, o sea los links que nos van mandando a las diferentes partes de la pagina. no puse un enlace para la home, porque tecnicamente ya estamos en la home asique era medio redudante me parecio -->
+            <div class="enlaces">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Index.html">Acerca de Nosotros</a></li>
+            </div>
+        </nav>
+        
         <div class="contenedor">
             <h1>Contactese con Nosotros</h1>
-            <p>Estamos aqui para alludarl@. 
-                Ante cualquier consulta relllene el sigiente formulario y precione "enviar", o contactenos mediante la vias de comunicacion dispuestas</p>
+            <p>Estamos aqui para ayudarl@. 
+                Ante cualquier consulta rellene el siguiente formulario y presione "enviar", o contactenos mediante la vias de comunicacion dispuestas</p>
             <div class="cuadro_contacto">
                 <div class="contacto_izquierda">
-                    <h3>Enviar counsulta</h3>
+                    <h3>Enviar consulta</h3>
                     <form>
                         <div class="fila_contacto">
                             <div class="columna_contacto">
@@ -37,6 +54,7 @@
                         </div>
                         <label for="" id="mensaje_txt">Mensaje</label><br>
                         <textarea name="mensaje" cols="30" rows="5" placeholder="..."></textarea>
+                       
                         <div class="botones">
                             <button type="submit" id="bonton_enviar_msj">Enviar</button>
                             <button id="bonton_enviar_msj"><a href="Index.html">Volver</a></button>

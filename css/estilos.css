@@ -9,7 +9,7 @@
 }
 /* Modifique la clase contenedor paara que tenga un margen por cuestiones esteticas mas que nada y le di el color de fondo para que le aplique a todo lo que va a tener clase de contenedor*/
 .contenedor{
-    width: 95%;
+    width: 85%;
     margin: auto;
     padding: 60px;
     background-color: rgb(41, 36, 43);
@@ -44,7 +44,7 @@
     position: relative;
 }
 .enlaces li{
-    padding-top: 40px;
+    padding-top: 20px;
     width: auto;
     height: auto;
     display: inline-block;
@@ -52,7 +52,8 @@
 }
 
 .enlaces a{
-
+    margin-top: 10px;
+    padding: 20px;
     padding-left: 10px;
     font-size: 1.1rem;
     text-decoration: none;
@@ -63,7 +64,7 @@
 
 .menu_contenido_btn{
     display: inline-block;
-    padding-left: 10px;
+    padding-left: 30px;
     text-align: justify;
     cursor: pointer;
     border: none;
@@ -96,9 +97,10 @@
 
 }
 
-/* aca lo que hago es que cambie el color del link cuando el puntero del mouse esta encima*/
+/* aca lo que hago es que cambie el color del link cuando el puntero del mouse esta encima, le sume que cambie el color del fondo para que se destaque un poco más*/
 .enlaces a:hover{
-    color: rgb(219, 199, 158);
+    color: black;
+    background-color: darkorange;
 }
 .contenido:hover{
     color: rgb(219, 199, 158) ;
@@ -115,9 +117,74 @@
 
 /* Esto es para centrar la imagen que viene despues del encabezado y el z-index para asegurar que la imagen quede debajo del encabezado cuando scrolleamos*/
 #imagen_intro{
-    position:relative; left: 20%; top: auto;
+    position:relative; left: 10%; top: auto;
     z-index: 0;
 }
+/*Centré los subtitulos*/
+h2{
+    text-align: center;
+}
 
+/* La Clase izquierda está asignada a la imagen que está en los contenidos de html5 y css, la flotamos para que quede en la misma línea que el texto*/
+.izquierda{
+    float: left;
+    margin-right: 20px;
+}
 
+.Btn_Incribirse{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+    margin: 10px 190px;
+}
+
+.Btn_Incribirse a{
+    background-color: darkorange;
+    text-decoration: none;
+    color: black;
+    text-align: right;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.Btn_Incribirse a:hover{
+    background-color: lightsalmon;
+    color: white;
+}
+
+.multimedia{
+    background-color: white;
+}
+video{
+    width: 70%;
+    margin: 0 15%;
+}
+
+#creadores{
+    display: flex;
+    justify-content: center;
+}
+
+.creador{
+    width: 300px;
+    border: 1px solid silver;
+    border-radius: 10px;
+    margin: 10px;    
+}
+
+.creador figure{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.creador h2{
+    text-align: center;
+}
+
+.creador img{
+    width: 80%;
+    margin: 10px 10%;
+}
 

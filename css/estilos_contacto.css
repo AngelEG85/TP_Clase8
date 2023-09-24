@@ -17,14 +17,14 @@ body{
     text-align: center;
 }
 .cuadro_contacto{
-    
+    width: 100%;
     display: flex;
     border-radius: 5%;
 }
 .contacto_izquierda{
     background: seashell;
-    flex-basis: 60%;
-    padding: 40px,60px;
+    flex-basis: 50%;
+    padding: 10px,10px;
     color: rgb(41, 36, 43);
     border-top-left-radius: 5%;
     border-bottom-left-radius: 5%;
@@ -48,6 +48,7 @@ h1{
 .contacto_izquierda h3{
     text-align: center;
     margin-bottom: 10px;
+    padding-top: 10px;
 }
 .fila_contacto{
     display: flex;
@@ -56,8 +57,8 @@ h1{
     padding-right: 10px;
     align-content: space-between;
     margin-bottom: 20px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .columna_contacto{
     padding: 5px;
@@ -83,7 +84,7 @@ textarea{
 }
 
 label{
-    margin-bottom: 10px;
+    
     display: block;
 }
 
@@ -99,11 +100,9 @@ label{
     color:cornsilk;
     height: 35px;
     border-radius: 30%;
-    margin-top: 20px;
-    margin-bottom: 20px;
     font-size: 1.3rem;
-    margin-left: 40%;
     cursor: pointer;
+    margin-left:15% ;   
 }
 .botones a{
     text-decoration: none;
@@ -127,4 +126,113 @@ tr td{
     max-width: 100%;
     margin-top: 80px;
     margin-bottom: 30px;
+}
+
+/* Modifique la clase contenedor paara que tenga un margen por cuestiones esteticas mas que nada y le di el color de fondo para que le aplique a todo lo que va a tener clase de contenedor*/
+.contenedor{
+    width: 85%;
+    margin: auto;
+    padding: 60px;
+    background-color: rgb(41, 36, 43);
+}
+/* Esto maneja lo que seria eel rectagulo del encabezado, el z-index es para que este siempre encima de todo lo que venga despues, y los position para que se mantenga siempre en la parte de arriba mientras scrolleamos*/
+.navegacion{
+    z-index: 99;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    padding:0%;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+}
+/* Esto es que el rectangulo que encuadra el logo sea del tamaño del encabezado*/
+.logo{
+    height: 70;
+}
+/* y aca configuro como se comporta la imagee del logo en si*/
+.logo img{
+    display: block;
+    height: 100%;
+}
+
+.titulo{
+    padding-top: 20px;
+    padding-right: 30px;
+    color:  rgb(224, 216, 216);
+}
+/* de aca para abajo le doy estilo a los links del menu*/
+.enlaces{
+    position: relative;
+}
+.enlaces li{
+    padding-top: 20px;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.enlaces a{
+    margin-top: 10px;
+    padding: 20px;
+    padding-left: 10px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: rgb(224, 216, 216);
+}
+
+/* Esto es todo lo que vendria siendo el menu contextual de la seccion de contenido, para que aparesca y desaparesca cuando se pone el mouse en sima*/
+
+.menu_contenido_btn{
+    display: inline-block;
+    padding-left: 30px;
+    text-align: justify;
+    cursor: pointer;
+    border: none;
+    color:  rgb(224, 216, 216);
+}
+.menu_contenido li{
+    background-color: rgba(224, 216, 216,0);
+    padding-bottom: 5px;
+    padding-top: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10%;
+}
+.menu_contenido a{
+    display: block;
+
+    background-color: rgba(224, 216, 216,0);
+    color: rgb(41, 36, 43);
+    font-size: 1.2rem;
+    border-radius: 10%;
+}
+.menu_contenido{
+    position: absolute;
+    display: none;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    background-color:rgba(224, 216, 216,0.9) ;
+    color: rgb(41, 36, 43);
+    transform: translateX(+4px);
+
+}
+
+/* aca lo que hago es que cambie el color del link cuando el puntero del mouse esta encima, le sume que cambie el color del fondo para que se destaque un poco más*/
+.enlaces a:hover{
+    color: black;
+    background-color: darkorange;
+}
+.contenido:hover{
+    color: rgb(219, 199, 158) ;
+}
+.enlaces > .menu_contenido_btn:hover + .menu_contenido{
+    display: block;
+}
+.menu_contenido:hover{
+    display: block;
+}
+.menu_contenido a:hover{
+    color: rgb(183, 0, 255);
 }
